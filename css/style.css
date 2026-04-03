@@ -1,0 +1,185 @@
+/* Index Diseño General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía y fondo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* Contenedor centrado */
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contenedor ul {
+    padding-left: 20px;
+}
+
+/* Header */
+header {
+    background: #0b6b8a;
+    color: #fff;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#titulo {
+    font-size: 1.4rem;
+    margin-left: 12px;
+    flex: 1;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+}
+
+/* Secciones */
+.seccion {
+    margin-top: 18px;
+    background: #fff;
+    padding: 14px;
+    border-radius: 6px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.hero h2 {
+    margin-top: 12px;
+    color: #0b6b8a;
+}
+
+.lead {
+    margin-top: 8px;
+    color: #444;
+}
+
+/* Creador */
+.creador img {
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: block;
+}
+
+.creador-nombre h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+figcaption p {
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+/* Galería */
+.galeria {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.galeria a {
+    display: block;
+    width: 110px;
+}
+
+.galeria img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Footer */
+footer {
+    margin-top: 18px;
+    background: #083a4a;
+    color: #fff;
+    padding: 14px 0;
+}
+
+.footer-inner {
+    text-align: center;
+}
+
+.footer-inner nav ul li {
+    margin-left: 8px;
+}
+
+.footer-inner a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Limpieza y accesibilidad */
+header::after,
+.contenedor::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive básico */
+@media (max-width: 700px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-left: 6px;
+    }
+
+    .galeria {
+        flex-direction: column;
+    }
+
+    .galeria a {
+        width: 100%;
+    }
+}
