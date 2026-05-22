@@ -1,0 +1,152 @@
+.gastro-encabezado {
+    background: linear-gradient(to bottom, #0d47a1, #1565c0);
+    padding: 48px 0 36px;
+    text-align: center;
+}
+
+.gastro-encabezado h1 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.gastro-encabezado p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    margin: 0;
+}
+
+.gastro-seccion {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.gastro-seccion-gris {
+    background: #f5f5f5;
+}
+
+.gastro-titulo-seccion {
+    font-size: 26px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 32px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #1565c0;
+    display: inline-block;
+}
+
+.gastro-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    transition: box-shadow 0.25s ease;
+}
+
+.gastro-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gastro-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gastro-card-body {
+    padding: 18px 20px 20px;
+}
+
+.gastro-plato {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.gastro-card-body p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.gastro-precio {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1565c0;
+}
+
+.gastro-icono {
+    font-size: 42px;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.gastro-restaurante {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 24px 26px;
+    height: 100%;
+    transition: box-shadow 0.25s ease;
+}
+
+.gastro-restaurante:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gastro-restaurante-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.gastro-rest-nombre {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.gastro-estrellas {
+    color: #f4a61d;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.gastro-restaurante p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.65;
+    margin-bottom: 16px;
+}
+
+.gastro-rest-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-size: 13px;
+    color: #666;
+    padding-top: 12px;
+    border-top: 1px solid #e8e8e8;
+}
+
+@media (max-width: 768px) {
+    .gastro-encabezado h1 {
+        font-size: 26px;
+    }
+
+    .gastro-seccion {
+        padding: 40px 0;
+    }
+
+    .gastro-restaurante-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
