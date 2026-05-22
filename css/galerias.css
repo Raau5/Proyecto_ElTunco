@@ -1,23 +1,24 @@
+.galeria-encabezado {
+    background: linear-gradient(to bottom, #0d47a1, #1565c0);
+    padding: 48px 0 36px;
+    text-align: center;
+}
+
+.galeria-encabezado h1 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.galeria-encabezado p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    margin: 0;
+}
+
 .galeria-section {
     padding: 60px 0 40px;
-}
-
-.galeria-header {
-    margin-bottom: 40px;
-}
-
-.galeria-titulo {
-    font-size: 42px;
-    font-weight: bold;
-    color: #0d47a1;
-    margin-bottom: 12px;
-}
-
-.galeria-subtitulo {
-    font-size: 18px;
-    color: #555;
-    max-width: 500px;
-    margin: 0 auto;
 }
 
 .filtro-radio {
