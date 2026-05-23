@@ -1,0 +1,89 @@
+.seccion-contacto {
+    background: linear-gradient(to bottom, #1565c0, #42a5f5, #ffb74d);
+    margin: 80px;
+    border-radius: 30px;
+    padding: 70px 40px 80px;
+}
+
+.contacto-titulo {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.contacto-subtitulo {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1rem;
+}
+
+.formulario-card {
+    background: white;
+    border-radius: 30px;
+    padding: 50px 45px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.etiqueta {
+    font-weight: 700;
+    color: #0d47a1;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+.campo {
+    border: 2px solid #e3f2fd;
+    border-radius: 14px;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    color: #333;
+    background: #f9fbff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.campo:focus {
+    border-color: #1565c0;
+    box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.15);
+    background: white;
+    outline: none;
+}
+
+.campo::placeholder {
+    color: #aab4c8;
+}
+
+textarea.campo {
+    resize: none;
+}
+
+.btn-enviar {
+    background: linear-gradient(to right, #1565c0, #42a5f5);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(21, 101, 192, 0.35);
+}
+
+.btn-enviar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(21, 101, 192, 0.45);
+}
+
+@media (max-width: 768px) {
+    .seccion-contacto {
+        margin: 20px;
+        padding: 50px 20px 60px;
+    }
+
+    .contacto-titulo {
+        font-size: 1.8rem;
+    }
+
+    .formulario-card {
+        padding: 35px 25px;
+    }
+}
