@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/galerias.css">
+    <title>El Tunco | Galeria</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand fw-bold">
+                <img src="img/tunco_logo.png" alt="tunco_logo" width="80" height="80"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="acerca-de.html" class="nav-link">Acerca de</a></li>
+                    <li class="nav-item"><a href="Actividades.html" class="nav-link">Actividades Turisticas</a></li>
+                    <li class="nav-item"><a href="gastronomia.html" class="nav-link">Gastronomia</a></li>
+                    <li class="nav-item"><a href="hospedaje.html" class="nav-link">Hospedaje</a></li>
+                    <li class="nav-item"><a href="galerias.html" class="nav-link">Galeria</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="creadores.html" class="nav-link">Creadores</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="galeria-encabezado">
+        <div class="container">
+            <h1>Galería de El Tunco</h1>
+            <p>Descubre la belleza de nuestra playa a través de imágenes</p>
+        </div>
+    </div>
+
+    <section class="galeria-section">
+        <div class="container">
+
+            <input type="radio" name="filtro" id="f-todos" class="filtro-radio" checked>
+            <input type="radio" name="filtro" id="f-playa" class="filtro-radio">
+            <input type="radio" name="filtro" id="f-surf" class="filtro-radio">
+            <input type="radio" name="filtro" id="f-atardecer" class="filtro-radio">
+            <input type="radio" name="filtro" id="f-vida-nocturna" class="filtro-radio">
+
+            <div class="galeria-filtros">
+                <label for="f-todos" class="btn-filtro">Todos</label>
+                <label for="f-playa" class="btn-filtro">Playa</label>
+                <label for="f-surf" class="btn-filtro">Surf</label>
+                <label for="f-atardecer" class="btn-filtro">Atardeceres</label>
+                <label for="f-vida-nocturna" class="btn-filtro">Vida Nocturna</label>
+            </div>
+
+            <div class="galeria-grid">
+
+                <div class="galeria-item item-playa">
+                    <a href="#foto-1" class="galeria-card">
+                        <div class="galeria-img-wrapper">
+                            <img src="img/tunco-12.jpg" alt="Playa El Tunco" class="galeria-img">
+                            <div class="galeria-overlay"><span class="galeria-zoom"></span></div>
+                        </div>
+                        <div class="galeria-info">
+                            <span class="galeria-categoria-tag">Playa</span>
+                            <h3 class="galeria-nombre">Playa El Tunco</h3>
+                            <p class="galeria-desc">Aguas tranquilas ideales para el descanso y el disfrute en familia.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="lightbox" id="foto-1">
+                    <a href="#" class="lightbox-cerrar">&#10005;</a>
+                    <div class="lightbox-contenido">
+                        <img src="img/tunco-12.jpg" alt="Playa El Tunco" class="lightbox-img">
+                        <div class="lightbox-texto">
+                            <span class="lightbox-tag">Playa</span>
+                            <h3 class="lightbox-titulo">Playa El Tunco</h3>
+                            <p class="lightbox-desc">Aguas tranquilas ideales para el descanso y el disfrute en familia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item item-surf">
+                    <a href="#foto-2" class="galeria-card">
+                        <div class="galeria-img-wrapper">
+                            <img src="img/tunco-13.jpg" alt="Surf en El Tunco" class="galeria-img">
+                            <div class="galeria-overlay"><span class="galeria-zoom"></span></div>
+                        </div>
+                        <div class="galeria-info">
+                            <span class="galeria-categoria-tag">Surf</span>
+                            <h3 class="galeria-nombre">Olas Perfectas</h3>
+                            <p class="galeria-desc">El Tunco es reconocido mundialmente por sus olas consistentes para surfistas de todos los niveles.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="lightbox" id="foto-2">
+                    <a href="#" class="lightbox-cerrar">&#10005;</a>
+                    <div class="lightbox-contenido">
+                        <img src="img/tunco-13.jpg" alt="Surf en El Tunco" class="lightbox-img">
+                        <div class="lightbox-texto">
+                            <span class="lightbox-tag">Surf</span>
+                            <h3 class="lightbox-titulo">Olas Perfectas</h3>
+                            <p class="lightbox-desc">El Tunco es reconocido mundialmente por sus olas consistentes para surfistas de todos los niveles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item item-atardecer">
+                    <a href="#foto-3" class="galeria-card">
+                        <div class="galeria-img-wrapper">
+                            <img src="img/tunco-05.jpg" alt="Atardecer El Tunco" class="galeria-img">
+                            <div class="galeria-overlay"><span class="galeria-zoom"></span></div>
+                        </div>
+                        <div class="galeria-info">
+                            <span class="galeria-categoria-tag">Atardeceres</span>
+                            <h3 class="galeria-nombre">Atardecer Dorado</h3>
+                            <p class="galeria-desc">Los atardeceres de El Tunco son únicos, con colores que tiñen el cielo de naranja y rosa.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="lightbox" id="foto-3">
+                    <a href="#" class="lightbox-cerrar">&#10005;</a>
+                    <div class="lightbox-contenido">
+                        <img src="img/tunco-05.jpg" alt="Atardecer El Tunco" class="lightbox-img">
+                        <div class="lightbox-texto">
+                            <span class="lightbox-tag">Atardeceres</span>
+                            <h3 class="lightbox-titulo">Atardecer Dorado</h3>
+                            <p class="lightbox-desc">Los atardeceres de El Tunco son únicos, con colores que tiñen el cielo de naranja y rosa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item item-playa">
+                    <a href="#foto-4" class="galeria-card">
+                        <div class="galeria-img-wrapper">
+                            <img src="img/tunco-03.jpg" alt="Vista de la playa" class="galeria-img">
+                            <div class="galeria-overlay"><span class="galeria-zoom"></span></div>
+                        </div>
+                        <div class="galeria-info">
+                            <span class="galeria-categoria-tag">Playa</span>
+                            <h3 class="galeria-nombre">Vista General</h3>
+                            <p class="galeria-desc">Disfruta rodeado del mejor ambiente que acompaña la playa.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="lightbox" id="foto-4">
+                    <a href="#" class="lightbox-cerrar">&#10005;</a>
+                    <div class="lightbox-contenido">
+                        <img src="img/tunco-03.jpg" alt="Vista de la playa" class="lightbox-img">
+                        <div class="lightbox-texto">
+                            <span class="lightbox-tag">Playa</span>
+                            <h3 class="lightbox-titulo">Vista General</h3>
+                            <p class="lightbox-desc">Disfruta rodeado del mejor ambiente que acompaña la playa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item item-playa">
+                    <a href="#foto-5" class="galeria-card">
+                        <div class="galeria-img-wrapper">
+                            <img src="img/acerca1.jpg" alt="Roca El Tunco" class="galeria-img">
+                            <div class="galeria-overlay"><span class="galeria-zoom"></span></div>
+                        </div>
+                        <div class="galeria-info">
+                            <span class="galeria-categoria-tag">Playa</span>
+                            <h3 class="galeria-nombre">La Roca Tunco</h3>
+                            <p class="galeria-desc">La icónica roca que da nombre a la playa, símbolo inconfundible del lugar.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="lightbox" id="foto-5">
+                    <a href="#" class="lightbox-cerrar">&#10005;</a>
+                    <div class="lightbox-contenido">
+                        <img src="img/acerca1.jpg" alt="Roca El Tunco" class="lightbox-img">
+                        <div class="lightbox-texto">
+                            <span class="lightbox-tag">Playa</span>
+                            <h3 class="lightbox-titulo">La Roca Tunco</h3>
+                            <p class="lightbox-desc">La icónica roca que da nombre a la playa, símbolo inconfundible del lugar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item item-vida-nocturna">
+                    <a href="#foto-6" class="galeria-card">
+                        <div class="galeria-img-wrapper">
+                            <img src="img/tunco-06.jpg" alt="Vida nocturna El Tunco" class="galeria-img">
+                            <div class="galeria-overlay"><span class="galeria-zoom"></span></div>
+                        </div>
+                        <div class="galeria-info">
+                            <span class="galeria-categoria-tag">Vida Nocturna</span>
+                            <h3 class="galeria-nombre">Noche en El Tunco</h3>
+                            <p class="galeria-desc">La fiesta comienza cuando el sol se pone. Bares y música en vivo para todos los gustos.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="lightbox" id="foto-6">
+                    <a href="#" class="lightbox-cerrar">&#10005;</a>
+                    <div class="lightbox-contenido">
+                        <img src="img/tunco-06.jpg" alt="Vida nocturna El Tunco" class="lightbox-img">
+                        <div class="lightbox-texto">
+                            <span class="lightbox-tag">Vida Nocturna</span>
+                            <h3 class="lightbox-titulo">Noche en El Tunco</h3>
+                            <p class="lightbox-desc">La fiesta comienza cuando el sol se pone. Bares y música en vivo para todos los gustos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item item-surf">
+                    <a href="#foto-7" class="galeria-card">
+                        <div class="galeria-img-wrapper">
+                            <img src="img/tunco-02.jpg" alt="Surfista El Tunco" class="galeria-img">
+                            <div class="galeria-overlay"><span class="galeria-zoom"></span></div>
+                        </div>
+                        <div class="galeria-info">
+                            <span class="galeria-categoria-tag">Surf</span>
+                            <h3 class="galeria-nombre">Surfistas al Amanecer</h3>
+                            <p class="galeria-desc">Los primeros surfistas en el agua aprovechan las mejores olas del día al amanecer.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="lightbox" id="foto-7">
+                    <a href="#" class="lightbox-cerrar">&#10005;</a>
+                    <div class="lightbox-contenido">
+                        <img src="img/tunco-02.jpg" alt="Surfista El Tunco" class="lightbox-img">
+                        <div class="lightbox-texto">
+                            <span class="lightbox-tag">Surf</span>
+                            <h3 class="lightbox-titulo">Surfistas al Amanecer</h3>
+                            <p class="lightbox-desc">Los primeros surfistas en el agua aprovechan las mejores olas del día al amanecer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item item-atardecer">
+                    <a href="#foto-8" class="galeria-card">
+                        <div class="galeria-img-wrapper">
+                            <img src="img/tunco-01.jpg" alt="Puesta de sol" class="galeria-img">
+                            <div class="galeria-overlay"><span class="galeria-zoom"></span></div>
+                        </div>
+                        <div class="galeria-info">
+                            <span class="galeria-categoria-tag">Atardeceres</span>
+                            <h3 class="galeria-nombre">Cielo en Llamas</h3>
+                            <p class="galeria-desc">El momento mágico en que el cielo se convierte en un lienzo de colores cálidos.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="lightbox" id="foto-8">
+                    <a href="#" class="lightbox-cerrar">&#10005;</a>
+                    <div class="lightbox-contenido">
+                        <img src="img/tunco-01.jpg" alt="Puesta de sol" class="lightbox-img">
+                        <div class="lightbox-texto">
+                            <span class="lightbox-tag">Atardeceres</span>
+                            <h3 class="lightbox-titulo">Cielo en Llamas</h3>
+                            <p class="lightbox-desc">El momento mágico en que el cielo se convierte en un lienzo de colores cálidos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item item-vida-nocturna">
+                    <a href="#foto-9" class="galeria-card">
+                        <div class="galeria-img-wrapper">
+                            <img src="img/tunco-07.jfif" alt="Ambiente nocturno" class="galeria-img">
+                            <div class="galeria-overlay"><span class="galeria-zoom"></span></div>
+                        </div>
+                        <div class="galeria-info">
+                            <span class="galeria-categoria-tag">Vida Nocturna</span>
+                            <h3 class="galeria-nombre">Ambiente Nocturno</h3>
+                            <p class="galeria-desc">Pupusas, cocteles de mariscos y más delicias de la cocina salvadoreña frente al mar.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="lightbox" id="foto-9">
+                    <a href="#" class="lightbox-cerrar">&#10005;</a>
+                    <div class="lightbox-contenido">
+                        <img src="img/tunco-07.jfif" alt="Ambiente nocturno" class="lightbox-img">
+                        <div class="lightbox-texto">
+                            <span class="lightbox-tag">Vida Nocturna</span>
+                            <h3 class="lightbox-titulo">Ambiente Nocturno</h3>
+                            <p class="lightbox-desc">Pupusas, cocteles de mariscos y más delicias de la cocina salvadoreña frente al mar.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Fin de Galeria-->
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <h2 class="footer-logo"><strong>EL TUNCO</strong></h2>
+                    <p class="footer-texto">
+                        El Tunco es una playa famosa por su ambiente surfista, atardeceres y vida nocturna.
+                        Aquí tienes una guía básica con lo esencial para tu visita.
+                    </p>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/ElTuncoBeach503/">
+                            <img src="img/facebook.png" alt="Facebook" class="icon-redes">
+                        </a>
+                        <a href="https://www.instagram.com/eltuncosv/">
+                            <img src="img/insta.png" alt="Instagram" class="icon-redes">
+                        </a>
+                        <a href="https://www.youtube.com/results?search_query=el+tunco">
+                            <img src="img/youtube.png" alt="YouTube" class="icon-redes">
+                        </a>
+                        <a href="https://x.com/PlayaElTunco">
+                            <img src="img/tweter.png" alt="Twitter" class="icon-redes">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.6675951270563!2d-89.38248575!3d13.494568799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7cd59e5bd0d10b%3A0xdb39264a9c3fd0a8!2sEl%20Tunco!5e0!3m2!1ses!2ssv!4v1779471535975!5m2!1ses!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="copyright"> © 2026 Playa El Tunco - Proyecto web </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
