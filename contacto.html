@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <title>El Tunco | Contacto</title>
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a href="index.html" class="navbar-brand fw-bold">
                 <img src="img/tunco_logo.png" alt="tunco_logo" width="80" height="80"/>
@@ -19,36 +20,54 @@
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Inicio </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="acerca-de.html" class="nav-link">Acerca de </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Actividades.html" class="nav-link">Actividades Turisticas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="gastronomia.html" class="nav-link">Gastronomia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="hospedaje.html" class="nav-link">Hospedaje</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="galerias.html" class="nav-link">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contacto.html" class="nav-link">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="creadores.html" class="nav-link">Creadores</a>
-                    </li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="acerca-de.html" class="nav-link">Acerca de</a></li>
+                    <li class="nav-item"><a href="Actividades.html" class="nav-link">Actividades Turisticas</a></li>
+                    <li class="nav-item"><a href="gastronomia.html" class="nav-link">Gastronomia</a></li>
+                    <li class="nav-item"><a href="hospedaje.html" class="nav-link">Hospedaje</a></li>
+                    <li class="nav-item"><a href="galerias.html" class="nav-link">Galeria</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="creadores.html" class="nav-link">Creadores</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- SECCIÓN CONTACTO -->
+    <section class="seccion-contacto">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="contacto-titulo fw-bold">Contáctanos</h2>
+                <p class="contacto-subtitulo">¿Tienes alguna pregunta o comentario? Escríbenos, con gusto te respondemos.</p>
+            </div>
 
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-10">
+                    <div class="formulario-card">
+                        <div class="mb-4">
+                            <label class="form-label etiqueta">Nombre completo</label>
+                            <input type="text" class="form-control campo" placeholder="¿Cómo te llamas?">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label etiqueta">Correo electrónico</label>
+                            <input type="email" class="form-control campo" placeholder="tucorreo@ejemplo.com">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label etiqueta">Título del mensaje</label>
+                            <input type="text" class="form-control campo" placeholder="¿De qué se trata?">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label etiqueta">Mensaje</label>
+                            <textarea class="form-control campo" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn-enviar">Enviar mensaje</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -70,7 +89,7 @@
                             <img src="img/youtube.png" alt="YouTube" class="icon-redes">
                         </a>
                         <a href="https://x.com/PlayaElTunco">
-                            <img src="img/tweter.png" alt="Twitter"class="icon-redes">
+                            <img src="img/tweter.png" alt="Twitter" class="icon-redes">
                         </a>
                     </div>
                 </div>
@@ -86,6 +105,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
